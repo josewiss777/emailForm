@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>emailForm</title>
+</head>
+<body>
+    <header class="heading">
+        <h1>Email💬Form</h1>
+        <p>Envia tus e-mails, fácil y rápido!</p>
+    </header>
+    <div id="textError"></div>
+    <div class="containerForm">
+        <form action="#" id="divForm" class="formDiv">
+            <label for="email">Destinatario:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe aquí el e-mail del destinatario...">
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Escribe aquí el asunto...">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" rows="8" name="message" placeholder="Escribe aquí el mensaje..."></textarea>
+            <div  id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            <div class="btnFlex">
+                <input type="submit" value="Enviar e-mail" id="btnSend">
+                <input type="button" class="pointer" value="Reset Form" id="btnReset">
+            </div>
+        </form>
+    </div>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
